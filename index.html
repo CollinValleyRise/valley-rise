@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valley Rise | One Business. One Leader. All In.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandDark: '#0B110E',    // Inky dark slate for premium tech contrast
+                        brandLight: '#FDFDFB',   // Ultra-clean, premium crisp background
+                        brandAccent: '#1E3A2F',  // Deep editorial emerald
+                        brandMuted: '#606C66',   // Soft refined gray for secondary elements
+                    },
+                    fontFamily: {
+                        serif: ['Georgia', 'ui-serif', 'serif'],
+                        sans: ['ui-sans-serif', 'system-ui', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(24px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Intersection Observer dynamic scroll triggers */
+        .reveal-element {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1), transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: transform, opacity;
+        }
+        .reveal-element.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        /* Style adjustments for range input tracking */
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: #1E3A2F;
+            cursor: pointer;
+            border: 2px solid #FDFDFB;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+        }
+        input[type="range"]::-moz-range-thumb {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: #1E3A2F;
+            cursor: pointer;
+            border: 2px solid #FDFDFB;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+<body class="bg-brandLight text-brandDark font-sans text-lg antialiased selection:bg-brandAccent selection:text-white overflow-x-hidden">
+
+    <header class="fixed top-0 left-0 right-0 bg-brandLight/80 backdrop-blur-md z-50 border-b border-gray-100/80 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="text-xl font-serif font-bold tracking-wider text-brandDark">
+                VALLEY RISE
+            </div>
+            <nav class="hidden md:flex space-x-10 items-center">
+                <a href="#philosophy" class="text-sm font-medium tracking-wide text-brandMuted hover:text-brandDark transition">Our Approach</a>
+                <a href="#criteria" class="text-sm font-medium tracking-wide text-brandMuted hover:text-brandDark transition">Investment Focus</a>
+                <a href="#background" class="text-sm font-medium tracking-wide text-brandMuted hover:text-brandDark transition">Background</a>
+                <a href="#transition" class="text-sm font-medium tracking-wide text-brandMuted hover:text-brandDark transition">The Timeline</a>
+                <a href="#contact" class="bg-brandDark text-white px-5 py-2.5 rounded text-sm font-medium hover:bg-brandAccent transition transform hover:scale-[1.02] active:scale-[0.98] shadow-sm">
+                    Connect Confidentially
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="relative min-h-[90vh] flex flex-col justify-center items-center px-6 pt-24 text-center overflow-hidden">
+        
+        <img src="Gemini_Generated_Image_issdycissdycissd.png" alt="Mountain Background" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='Gemini_Generated_Image_issdycissdycissd.PNG';">
+        
+        <div class="absolute inset-0 bg-gradient-to-b from-brandDark/80 via-brandDark/60 to-brandLight z-10"></div>
+
+        <div class="relative z-20 max-w-5xl mx-auto">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif text-white font-bold leading-[1.1] mb-10 tracking-tight drop-shadow-sm animate-fade-in-up" style="animation-delay: 0.1s;">
+                Transitioning your life's work deserves a partner focused on <span class="italic font-serif font-normal text-gray-200">preserving your legacy</span>.
+            </h1>
+            
+            <p class="text-lg md:text-xl text-gray-100 font-medium max-w-3xl mx-auto leading-relaxed mb-12 drop-shadow-sm animate-fade-in-up" style="animation-delay: 0.3s;">
+                I am an experienced business operator backed by a trusted circle of investors. My absolute and singular focus is to acquire, step into, and lead <span class="italic font-serif font-bold text-white">just one</span> exceptional business full-time.
+            </p>
+            
+            <div class="animate-fade-in-up flex flex-col sm:flex-row gap-4 justify-center items-center mb-4" style="animation-delay: 0.5s;">
+                <a href="#contact" class="w-full sm:w-auto bg-brandAccent text-white px-8 py-4 rounded font-medium hover:bg-brandDark transition transform hover:-translate-y-0.5 shadow-md hover:shadow-lg">
+                    Let's Chat
+                </a>
+                <a href="#philosophy" class="w-full sm:w-auto bg-white/10 backdrop-blur-sm border border-white/30 text-white px-8 py-4 rounded font-medium hover:bg-white/20 transition">
+                    Explore Our Model
+                </a>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section id="philosophy" class="bg-white py-32 relative">
+        <div class="max-w-4xl mx-auto px-6 reveal-element">
+            
+            <div class="w-12 h-1 bg-brandAccent mb-10"></div>
+            
+            <h2 class="text-3xl md:text-5xl font-serif text-brandDark mb-8 tracking-tight">The anti-corporate playbook.</h2>
+            <div class="space-y-8 text-brandMuted leading-relaxed text-lg md:text-xl">
+                <p>Standard corporate acquirers and private equity platforms frequently view organizations purely through financial spreadsheets. They optimize for quick returns from remote offices, relying on short-term efficiency plays rather than deep operational stability.</p>
+                <p class="font-medium text-brandDark text-xl md:text-2xl border-l-2 border-brandAccent pl-6 my-10 italic">
+                    "When scale is forced, legacy gets diluted and localized cultures disappear."
+                </p>
+                <p>Valley Rise stands as an intentional counterweight to that style. I believe growth must be rooted locally—built around everyday stability, safeguarding existing teams, and carrying forward established values carefully.</p>
+            </div>
+            
+            <div class="mt-16 grid sm:grid-cols-2 gap-6">
+                <div class="p-8 bg-brandLight rounded-xl border border-gray-100/70 flex items-start gap-5 hover:border-gray-200 transition duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-brandAccent text-white flex items-center justify-center shrink-0 shadow-sm shadow-brandAccent/20">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h4 class="font-serif font-bold text-lg text-brandDark mb-1">Passionate Ownership</h4>
+                        <p class="text-sm md:text-base text-brandMuted leading-relaxed">Your brand footprint stays local and intact, managed by a passionate young entrepreneur who wants to maintain your legacy.</p>
+                    </div>
+                </div>
+
+                <div class="p-8 bg-brandLight rounded-xl border border-gray-100/70 flex items-start gap-5 hover:border-gray-200 transition duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-brandAccent text-white flex items-center justify-center shrink-0 shadow-sm shadow-brandAccent/20">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h4 class="font-serif font-bold text-lg text-brandDark mb-1">Committed Capital</h4>
+                        <p class="text-sm md:text-base text-brandMuted leading-relaxed">Fully aligned financial backing designed to ensure transaction speed, and offering execution stability.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="criteria" class="bg-gray-50/60 border-y border-gray-100 py-32">
+        <div class="max-w-6xl mx-auto px-6 reveal-element">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-mono uppercase tracking-widest text-brandMuted block mb-2">Acquisition Parameters</span>
+                <h2 class="text-3xl md:text-5xl font-serif text-brandDark tracking-tight">Our Ideal Business Criteria</h2>
+                <p class="text-base text-brandMuted mt-4">We maintain clean, objective investment targets to ensure absolute operational clarity throughout a transaction.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl border border-gray-200/60 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center mb-6 text-brandAccent">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-serif font-bold text-xl text-brandDark mb-3">Financial Profile</h3>
+                        <p class="text-sm text-brandMuted leading-relaxed">We target businesses demonstrating a clear track record of historical profitability, clean books, and consistently stable profit margins.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl border border-gray-200/60 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center mb-6 text-brandAccent">
+                            <!-- Clean editorial book icon for Business Profile alignment -->
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-serif font-bold text-xl text-brandDark mb-3">Business Profile</h3>
+                        <p class="text-sm text-brandMuted leading-relaxed">Highly predictable models built around contractually recurring revenue streams and strong customer retention.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl border border-gray-200/60 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center mb-6 text-brandAccent">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-serif font-bold text-xl text-brandDark mb-3">Market Position</h3>
+                        <p class="text-sm text-brandMuted leading-relaxed">Defensible localized niches possessing a strong, visible brand reputation and a deeply loyal, diversified customer base.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="background" class="max-w-6xl mx-auto px-6 py-32 grid md:grid-cols-12 gap-16 items-center">
+        <div class="md:col-span-5 rounded-xl overflow-hidden shadow-sm border border-gray-100 reveal-element relative group">
+            <div class="absolute inset-0 bg-brandAccent/5 mix-blend-multiply transition group-hover:opacity-0 duration-500"></div>
+            <img src="1603572179180.jpg" alt="Operator Portrait" class="w-full h-auto grayscale-[20%] contrast-[105%] transition transform duration-700 hover:scale-[1.03]">
+        </div>
+        <div class="md:col-span-7 space-y-6 reveal-element">
+            <span class="text-xs font-mono uppercase tracking-widest text-brandMuted block">The Operator</span>
+            <h2 class="text-3xl md:text-5xl font-serif text-brandDark tracking-tight">Grounded foundations, institutional capability.</h2>
+            <div class="space-y-6 text-brandMuted text-base md:text-lg leading-relaxed">
+                <p>I grew up in the northern Wisconsin surrounded by independent family businesses. From my earliest work experiences, I grew a strong appreciation for the accountability, long hours, and direct community responsibility required to run a sustainable company.</p>
+                <p>Professionally, I refined my skillset working at Fortune 500 organizations, advancing into senior general management. Across these roles, I operated multi-million dollar P&Ls, leading cross-functional teams to tackle complex turnarounds and scale commercial brands globally.</p>
+                <p>Today, my wife, daughter and I are based in Ohio. When we partner with the right business, we are fully prepared to physically relocate to your local community to step into day-to-day operations full-time, ensuring a stable transition.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-brandLight py-32 border-t border-gray-100">
+        <div class="max-w-4xl mx-auto px-6 reveal-element">
+            <div class="text-center mb-12">
+                <span class="text-xs font-mono uppercase tracking-widest text-brandMuted block mb-2">Adaptable Capital Structure</span>
+                <h2 class="text-3xl md:text-4xl font-serif text-brandDark tracking-tight">Aligning with Your Timeline Goals</h2>
+                <p class="text-sm text-brandMuted mt-3 max-w-xl mx-auto">Unlike rigid, structural corporate private equity, our timelines adapt completely around your family's priorities. Use the component below to preview our transitional alignment framework.</p>
+            </div>
+
+            <div class="bg-white p-8 md:p-12 rounded-2xl border border-gray-200/80 shadow-sm">
+                <div class="mb-8">
+                    <label for="timeline-slider" class="block text-xs font-mono uppercase tracking-widest text-brandMuted mb-4 text-center">Select Desired Transition Horizon</label>
+                    <input type="range" id="timeline-slider" min="1" max="3" value="1" class="w-full accent-brandAccent bg-gray-100 h-2 rounded-lg cursor-pointer appearance-none">
+                    <div class="flex justify-between text-xs font-mono text-brandMuted mt-4 px-1">
+                        <span>IMMEDIATE EXIT</span>
+                        <span>12-MONTH HANDOFF</span>
+                        <span>RETAINING MINORITY STAKE</span>
+                    </div>
+                </div>
+
+                <div id="slider-content-box" class="bg-gray-50/80 p-6 rounded-xl border border-gray-100 transition-all duration-300">
+                    <h4 id="slider-title" class="font-serif font-bold text-lg text-brandDark mb-2">Immediate Operational Handover</h4>
+                    <p id="slider-description" class="text-sm text-brandMuted leading-relaxed">Engineered for owners desiring immediate retirement or freedom to pursue other ventures. We execute structured due dilligence and immediately move into the operator role to let you exit completely with minimal overlap.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="transition" class="bg-brandDark text-brandLight py-32 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute left-1/4 top-0 bottom-0 w-[1px] bg-white"></div>
+            <div class="absolute left-2/4 top-0 bottom-0 w-[1px] bg-white"></div>
+            <div class="absolute left-3/4 top-0 bottom-0 w-[1px] bg-white"></div>
+        </div>
+
+        <div class="max-w-6xl mx-auto px-6 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-24 reveal-element">
+                <span class="text-xs font-mono uppercase tracking-widest text-gray-400 block mb-4">Succession Framework</span>
+                <h2 class="text-3xl md:text-5xl font-serif mb-6 tracking-tight">Structured for clarity. Tailored for you.</h2>
+                <p class="text-lg text-gray-400 leading-relaxed">Every owner’s departure requires personal orchestration. We keep operations straightforward and transparent.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white/[0.03] border border-white/10 p-8 rounded-lg reveal-element hover:border-white/20 transition duration-300">
+                    <div class="w-8 h-8 rounded-full bg-brandLight/10 text-white flex items-center justify-center text-xs font-mono mb-8">01</div>
+                    <h3 class="text-lg font-serif font-bold mb-3">Confidential Intro</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">A low-pressure, alignment call to exchange values, share goals, and establish if there is a fundamental cultural fit between your company and my experience.</p>
+                </div>
+
+                <div class="bg-white/[0.03] border border-white/10 p-8 rounded-lg reveal-element hover:border-white/20 transition duration-300" style="transition-delay: 0.1s;">
+                    <div class="w-8 h-8 rounded-full bg-brandLight/10 text-white flex items-center justify-center text-xs font-mono mb-8">02</div>
+                    <h3 class="text-lg font-serif font-bold mb-3">Flexible Layout</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">Whether you require an efficient transition over a few months or a structured phase-out stretching across several years, we customize a plan completely around your family's timeline.</p>
+                </div>
+
+                <div class="bg-white/[0.03] border border-white/10 p-8 rounded-lg reveal-element hover:border-white/20 transition duration-300" style="transition-delay: 0.2s;">
+                    <div class="w-8 h-8 rounded-full bg-brandLight/10 text-white flex items-center justify-center text-xs font-mono mb-8">03</div>
+                    <h3 class="text-lg font-serif font-bold mb-3">Seamless Diligence</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">We work together directly without distracting your current employees or introducing operational bottlenecks into your daily workflow. We don't want to distrupt what is already working so well!</p>
+                </div>
+
+                <div class="bg-white/[0.03] border border-white/10 p-8 rounded-lg reveal-element hover:border-white/20 transition duration-300" style="transition-delay: 0.3s;">
+                    <div class="w-8 h-8 rounded-full bg-brandLight/10 text-white flex items-center justify-center text-xs font-mono mb-8">04</div>
+                    <h3 class="text-lg font-serif font-bold mb-3">Operator Onboarding</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">I integrate directly as full-time operator, unlocking your freedom to transition fully into retirement or strategic advisory roles.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-50/50 border-t border-gray-100 py-32">
+        <div class="max-w-4xl mx-auto px-6 reveal-element">
+            <h2 class="text-3xl font-serif text-brandDark text-center mb-16 tracking-tight">Frequently Asked Questions</h2>
+            
+            <div class="space-y-6">
+                <details class="group bg-white p-6 rounded-lg border border-gray-200/60 shadow-sm list-none cursor-pointer">
+                    <summary class="flex justify-between items-center font-serif font-bold text-lg text-brandDark">
+                        <span>How are my current employees protected?</span>
+                        <span class="text-brandMuted transition group-open:rotate-180 font-mono text-sm">&darr;</span>
+                    </summary>
+                    <p class="text-brandMuted text-base leading-relaxed mt-4 pt-4 border-t border-gray-100">
+                        My strategic framework emphasizes operational continuity and organic value preservation—not standard corporate downsizing. Existing teams retain the vital day-to-day expertise that protects consistency; safeguarding them remains my primary goal.
+                    </p>
+                </details>
+
+                <details class="group bg-white p-6 rounded-lg border border-gray-200/60 shadow-sm list-none cursor-pointer">
+                    <summary class="flex justify-between items-center font-serif font-bold text-lg text-brandDark">
+                        <span>What is your investment capitalization structure?</span>
+                        <span class="text-brandMuted transition group-open:rotate-180 font-mono text-sm">&darr;</span>
+                    </summary>
+                    <p class="text-brandMuted text-base leading-relaxed mt-4 pt-4 border-t border-gray-100">
+                        Valley Rise is structured as a dedicated investment model backed by private partners, institutional search investors, and veteran advisors. This framework guarantees structured, dependable transactions.
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="max-w-4xl mx-auto px-6 py-32 text-center relative">
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-brandAccent/5 rounded-full filter blur-2xl -z-10"></div>
+        
+        <div class="reveal-element">
+            <h2 class="text-3xl md:text-5xl font-serif text-brandDark mb-4 tracking-tight">Let's connect confidentially.</h2>
+            <p class="text-brandMuted max-w-xl mx-auto text-base md:text-lg mb-12 leading-relaxed">
+                If you are exploring transition opportunities, let's schedule an initial private discussion. <br><br><b>You can reach out to collin @valley-rise.com</b>
+            </p>
+            
+            <div class="max-w-md mx-auto bg-white p-8 rounded-2xl border border-gray-200/80 shadow-sm text-left">
+                <form action="#" method="POST" class="space-y-5" onsubmit="event.preventDefault(); alert('Dialogue Initiated Securely.');">
+                    <div>
+                        <label class="block text-xs font-mono uppercase tracking-widest text-brandMuted mb-2">Name</label>
+                        <input type="text" required class="w-full border border-gray-200 rounded p-3 text-base focus:outline-none focus:border-brandAccent transition bg-gray-50/50">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-mono uppercase tracking-widest text-brandMuted mb-2">Primary Contact Info</label>
+                        <input type="text" required class="w-full border border-gray-200 rounded p-3 text-base focus:outline-none focus:border-brandAccent transition bg-gray-50/50" placeholder="Email or Phone">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-mono uppercase tracking-widest text-brandMuted mb-2">Brief Context (Optional)</label>
+                        <textarea class="w-full border border-gray-200 rounded p-3 text-base focus:outline-none focus:border-brandAccent transition bg-gray-50/50 h-24 resize-none"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-brandDark text-white font-medium py-4 rounded text-sm uppercase tracking-widest hover:bg-brandAccent transition-all duration-200 transform active:scale-[0.99] shadow-sm">
+                        Submit Private Request
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t border-gray-100 py-12 text-center text-xs font-mono tracking-wider text-brandMuted uppercase bg-white">
+        <div>&copy; 2026 Valley Rise, LLC.</div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const elementsToReveal = document.querySelectorAll('.reveal-element');
+            const revealOnScroll = () => {
+                const triggerBottom = (window.innerHeight / 5) * 4.5;
+                elementsToReveal.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    if (elementTop < triggerBottom) {
+                        element.classList.add('active');
+                    }
+                });
+            };
+            window.addEventListener('scroll', revealOnScroll);
+            revealOnScroll();
+
+            const slider = document.getElementById('timeline-slider');
+            const title = document.getElementById('slider-title');
+            const description = document.getElementById('slider-description');
+
+            const sliderData = {
+                1: {
+                    title: "Immediate Operational Handover",
+                    desc: "Engineered for owners desiring immediate retirement or freedom to pursue other ventures. We execute structured validation periods and immediately move into the operator role to let you exit completely with minimal overlap."
+                },
+                2: {
+                    title: "Structured 12-Month Handoff",
+                    desc: "Ideal for business models requiring complex operational transfers or deep relationship handovers. We operate side-by-side with you across a full operational fiscal year, solidifying deep corporate knowledge."
+                },
+                3: {
+                    title: "Retaining Minority Equity Stake",
+                    desc: "Designed for founders who want to step back from day-to-day administrative burdens but desire to retain an upside component. You transition completely out of operations while keeping your minority equity value aligned with our forward progress."
+                }
+            };
+
+            slider.addEventListener('input', (e) => {
+                const val = e.target.value;
+                title.textContent = sliderData[val].title;
+                description.textContent = sliderData[val].desc;
+            });
+        });
+    </script>
+</body>
+</html>
