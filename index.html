@@ -10,10 +10,10 @@
             theme: {
                 extend: {
                     colors: {
-                        brandDark: '#0B110E',    // Inky dark slate for premium tech contrast
-                        brandLight: '#FDFDFB',   // Ultra-clean, premium crisp background
-                        brandAccent: '#1E3A2F',  // Deep editorial emerald
-                        brandMuted: '#606C66',   // Soft refined gray for secondary elements
+                        brandDark: '#0B110E',
+                        brandLight: '#FDFDFB',
+                        brandAccent: '#1E3A2F',
+                        brandMuted: '#606C66',
                     },
                     fontFamily: {
                         serif: ['Georgia', 'ui-serif', 'serif'],
@@ -39,7 +39,6 @@
         }
     </script>
     <style>
-        /* Intersection Observer dynamic scroll triggers */
         .reveal-element {
             opacity: 0;
             transform: translateY(30px);
@@ -50,7 +49,6 @@
             opacity: 1;
             transform: translateY(0);
         }
-        /* Style adjustments for range input tracking */
         input[type="range"]::-webkit-slider-thumb {
             -webkit-appearance: none;
             appearance: none;
@@ -163,12 +161,6 @@
         </div>
     </section>
 
-    <!-- ============================================================ -->
-    <!-- THE OPERATOR — moved here (after Philosophy, before Criteria) -->
-    <!-- border-t below creates a clean visual break from the section  -->
-    <!-- above; the Criteria section's own border-y creates the break  -->
-    <!-- below, so the two borders never double up.                    -->
-    <!-- ============================================================ -->
     <section id="background" class="bg-white border-t border-gray-100 py-32">
         <div class="max-w-6xl mx-auto px-6">
             <div class="grid md:grid-cols-12 gap-16 items-center reveal-element">
@@ -180,7 +172,7 @@
                     <span class="text-xs font-mono uppercase tracking-widest text-brandMuted block">The Operator</span>
                     <h2 class="text-3xl md:text-5xl font-serif text-brandDark tracking-tight">Grounded foundations, institutional capability.</h2>
                     <div class="space-y-6 text-brandMuted text-base md:text-lg leading-relaxed">
-                        <p>Growing up in northern Wisconsin, I spent my early years watching family-owned businesses run on hard work, direct community accountability, and relentless problem-solving. Those early experiences taught me a fundamental lesson: great businesses aren't built on spreadsheets, they’re built on people, trust, and showing up every single day.</p>
+                        <p>Growing up in northern Wisconsin, I spent my early years watching family-owned businesses run on hard work, direct community accountability, and relentless problem-solving. Those early experiences taught me a fundamental lesson: great businesses aren't built on spreadsheets, they're built on people, trust, and showing up every single day.</p>
                         <p>Over the past decade, I carried those lessons into corporate general management, taking on full P&L accountability for multi-million dollar business lines. Leading large cross-functional teams trained me in the hard reality of real-world operations: how to fix broken supply chains, grow revenue through sales & marketing, empower frontline teams, and navigate messy situations when things don't go according to plan.</p>
                         <p>While large corporate brands provided a masterclass in operational discipline, my true passion lies in hands-on ownership. Small businesses are the engine of our economy, and I am excited to pour my energy into building upon a legacy someone else spent decades creating.</p>
                         <p>Today, my wife, our young daughter, and I are based in Ohio. We aren't looking to manage a portfolio from afar. When we find the right business, our family will relocate directly to your local community so I can step into the day-to-day operations full-time, protect your team, and lead the company into its next phase of growth.</p>
@@ -188,27 +180,6 @@
                 </div>
             </div>
 
-            <!-- ============================================================ -->
-            <!-- IMAGE GALLERY PLACEHOLDER                                     -->
-            <!-- Add as many/few <div> blocks below as you have photos of      -->
-            <!-- yourself. Shown as a simple grid (no carousel) so visitors    -->
-            <!-- can see every photo at once.                                  -->
-            <!--                                                                -->
-            <!-- TO ADD YOUR PHOTOS ON GITHUB:                                 -->
-            <!--  1. Go to your valley-rise.com repo on github.com             -->
-            <!--  2. Click "Add file" > "Upload files"                         -->
-            <!--  3. Drag in your photos at the REPO ROOT (same folder as      -->
-            <!--     1603572179180.jpg) — no need for a subfolder.             -->
-            <!--  4. Name them exactly what the src= below expects, e.g.       -->
-            <!--     collin-2.jpg, collin-3.jpg, collin-4.jpg — or rename      -->
-            <!--     the src= attributes below to match whatever you upload.   -->
-            <!--  5. Commit the changes.                                       -->
-            <!--  6. GitHub Pages (or your host) will redeploy automatically,  -->
-            <!--     usually within 1-2 minutes. Refresh the live site to      -->
-            <!--     confirm the photos appear.                                -->
-            <!--  Tip: compress photos first (e.g. tinypng.com) so the page    -->
-            <!--  still loads fast with more images on it.                    -->
-            <!-- ============================================================ -->
             <div class="mt-16 reveal-element">
                 <span class="text-xs font-mono uppercase tracking-widest text-brandMuted block mb-6">More From The Search</span>
                 <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
@@ -253,7 +224,6 @@
                 <div class="bg-white p-8 rounded-xl border border-gray-200/60 shadow-sm flex flex-col justify-between">
                     <div>
                         <div class="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center mb-6 text-brandAccent">
-                            <!-- Clean editorial book icon for Business Profile alignment -->
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
                             </svg>
@@ -316,7 +286,7 @@
             <div class="text-center max-w-3xl mx-auto mb-24 reveal-element">
                 <span class="text-xs font-mono uppercase tracking-widest text-gray-400 block mb-4">Succession Framework</span>
                 <h2 class="text-3xl md:text-5xl font-serif mb-6 tracking-tight">Structured for clarity. Tailored for you.</h2>
-                <p class="text-lg text-gray-400 leading-relaxed">Every owner’s departure requires personal orchestration. We keep operations straightforward and transparent.</p>
+                <p class="text-lg text-gray-400 leading-relaxed">Every owner's departure requires personal orchestration. We keep operations straightforward and transparent.</p>
             </div>
 
             <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -354,7 +324,7 @@
             <div class="space-y-6">
                 <details class="group bg-white p-6 rounded-lg border border-gray-200/60 shadow-sm list-none cursor-pointer">
                     <summary class="flex justify-between items-center font-serif font-bold text-lg text-brandDark">
-                        <span>Who are you, and why aren't you a typical Private Equity firm?</span>
+                        <span>Who are you, and what makes you a different buyer?</span>
                         <span class="text-brandMuted transition group-open:rotate-180 font-mono text-sm">&darr;</span>
                     </summary>
                     <p class="text-brandMuted text-base leading-relaxed mt-4 pt-4 border-t border-gray-100">
@@ -447,31 +417,30 @@
 
     <section id="contact" class="max-w-4xl mx-auto px-6 py-32 text-center relative">
         <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-brandAccent/5 rounded-full filter blur-2xl -z-10"></div>
-        
+
         <div class="reveal-element">
             <h2 class="text-3xl md:text-5xl font-serif text-brandDark mb-4 tracking-tight">Let's connect confidentially.</h2>
             <p class="text-brandMuted max-w-xl mx-auto text-base md:text-lg mb-12 leading-relaxed">
-                If you are exploring transition opportunities, let's schedule an initial private discussion. <br><br><b>You can reach out to collin @valley-rise.com</b>
+                If you are exploring transition opportunities, let's schedule an initial private discussion.
             </p>
-            
-            <div class="max-w-md mx-auto bg-white p-8 rounded-2xl border border-gray-200/80 shadow-sm text-left">
-                <form action="#" method="POST" class="space-y-5" onsubmit="event.preventDefault(); alert('Dialogue Initiated Securely.');">
-                    <div>
-                        <label class="block text-xs font-mono uppercase tracking-widest text-brandMuted mb-2">Name</label>
-                        <input type="text" required class="w-full border border-gray-200 rounded p-3 text-base focus:outline-none focus:border-brandAccent transition bg-gray-50/50">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-mono uppercase tracking-widest text-brandMuted mb-2">Primary Contact Info</label>
-                        <input type="text" required class="w-full border border-gray-200 rounded p-3 text-base focus:outline-none focus:border-brandAccent transition bg-gray-50/50" placeholder="Email or Phone">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-mono uppercase tracking-widest text-brandMuted mb-2">Brief Context (Optional)</label>
-                        <textarea class="w-full border border-gray-200 rounded p-3 text-base focus:outline-none focus:border-brandAccent transition bg-gray-50/50 h-24 resize-none"></textarea>
-                    </div>
-                    <button type="submit" class="w-full bg-brandDark text-white font-medium py-4 rounded text-sm uppercase tracking-widest hover:bg-brandAccent transition-all duration-200 transform active:scale-[0.99] shadow-sm">
-                        Submit Private Request
-                    </button>
-                </form>
+
+            <div class="max-w-md mx-auto bg-white p-10 rounded-2xl border border-gray-200/80 shadow-sm">
+                <div class="w-14 h-14 rounded-full bg-brandAccent/10 text-brandAccent flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                </div>
+
+                <a href="mailto:collin@valley-rise.com?subject=Business%20Introduction%20-%20Valley%20Rise&body=Hi%20Collin%2C%0D%0A%0D%0AA%20bit%20about%20the%20business%3A%0D%0A-%20Industry%2FLocation%3A%20%0D%0A-%20Approx.%20Revenue%2FEBITDA%3A%20%0D%0A-%20Reason%20for%20exploring%20a%20transition%3A%20%0D%0A%0D%0ALooking%20forward%20to%20connecting.%0D%0A"
+                   class="block font-serif text-xl md:text-2xl text-brandDark hover:text-brandAccent transition mb-2">
+                    collin@valley-rise.com
+                </a>
+                <p class="text-xs text-brandMuted font-mono uppercase tracking-widest mb-6">Typically responds within 1 business day</p>
+
+                <button onclick="navigator.clipboard.writeText('collin@valley-rise.com'); this.textContent='Copied!'; setTimeout(() => this.textContent='Copy Email Address', 2000);"
+                        class="text-sm text-brandMuted border border-gray-200 rounded px-4 py-2 hover:border-brandAccent hover:text-brandAccent transition">
+                    Copy Email Address
+                </button>
             </div>
         </div>
     </section>
