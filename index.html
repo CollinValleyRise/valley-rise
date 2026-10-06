@@ -68,19 +68,11 @@
   .hero > img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
   .hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(59,42,32,.9) 0%,rgba(59,42,32,.62) 55%,rgba(59,42,32,.18) 100%)}
   .hero > .wrap{position:relative;z-index:2;width:100%}
-  .hero .in{position:relative;z-index:2;max-width:640px;color:var(--cream);padding:70px 0 130px}
+  .hero .in{position:relative;z-index:2;max-width:640px;color:var(--cream);padding:80px 0 90px}
   .hero h1{color:var(--cream);font-size:clamp(46px,6.2vw,80px);line-height:1;letter-spacing:-.015em;margin-bottom:22px}
   .hero h1 em{font-style:italic;color:var(--amber-l)}
   .hero .lead{font-size:18px;color:#F1E6D0;margin-bottom:30px}
   .hero .btn{margin-right:18px}
-
-  /* Paths */
-  .paths{position:relative;z-index:3;margin-top:-66px}
-  .paths .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-  .path{background:var(--card-hi);border-radius:16px;padding:20px 22px 22px;box-shadow:0 6px 22px rgba(59,42,32,.14);transition:transform .2s,box-shadow .2s;display:block}
-  .path:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(59,42,32,.2)}
-  .path small{display:block;font:500 13px var(--sans);color:var(--moss);margin-bottom:4px}
-  .path h3{font-size:23px;line-height:1.15}
 
   /* Sections */
   .sec{padding:84px 0 20px}
@@ -160,10 +152,8 @@
     .menu-btn{display:block}
     .mobile-nav a{padding:15px 22px}
     .hero{min-height:520px}
-    .hero .in{padding:56px 0 110px}
+    .hero .in{padding:56px 0 70px}
     .hero::before{background:linear-gradient(180deg,rgba(59,42,32,.82) 0%,rgba(59,42,32,.7) 100%)}
-    .paths{margin-top:-46px}
-    .paths .grid{grid-template-columns:1fr 1fr}
     .glance,.about{grid-template-columns:1fr;gap:34px}
     .about .portrait{max-width:260px}
     .cols,.wgrid,.steps,.foot .wrap{grid-template-columns:1fr}
@@ -173,7 +163,6 @@
     .sec{padding-top:64px}
   }
   @media (max-width:520px){
-    .paths .grid{grid-template-columns:1fr}
     .hero .btn{margin-bottom:14px}
     .mailcard{padding:20px}
   }
@@ -226,18 +215,6 @@
       </div>
     </div>
   </section>
-
-  <!-- PATHS -->
-  <div class="paths">
-    <div class="wrap">
-      <div class="grid">
-        <a class="path" href="#how"><small>I'm an owner and I'd like to</small><h3>Understand how a sale works</h3></a>
-        <a class="path" href="#faq-team"><small>I'm an owner and I'd like to</small><h3>Know what happens to my team</h3></a>
-        <a class="path" href="#pay"><small>I'm an owner and I'd like to</small><h3>See how I'd get paid</h3></a>
-        <a class="path" href="#contact"><small>I'm an owner and I'd like to</small><h3>Talk it through, confidentially</h3></a>
-      </div>
-    </div>
-  </div>
 
   <!-- ONE BUYER, ONE COMPANY -->
   <section class="sec">
