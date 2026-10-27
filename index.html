@@ -114,6 +114,16 @@
   .tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;filter:grayscale(12%) contrast(104%);transition:transform .7s}
   .tile:hover img{transform:scale(1.05)}
 
+  /* Comparison */
+  .cmp{margin-top:30px;border-radius:22px;overflow:hidden;background:var(--card-hi);box-shadow:0 6px 22px rgba(59,42,32,.12)}
+  .cmp-row{display:grid;grid-template-columns:.9fr 1.15fr 1fr 1fr}
+  .cmp-row > div{padding:22px 26px;font-size:16px;color:var(--text);border-top:1px solid rgba(185,122,43,.22)}
+  .cmp-row.cmp-head > div{border-top:0;font:500 26px/1.1 var(--serif);color:var(--espresso);padding-top:26px;padding-bottom:22px}
+  .cmp-row .cmp-label{font:600 15px var(--sans);color:var(--moss)}
+  .cmp-row .cmp-us{background:var(--moss);color:#F6EFDF;border-top-color:rgba(255,255,255,.18)}
+  .cmp-row.cmp-head .cmp-us{color:#FFF7E8}
+  .cmp-fine{margin-top:16px;font-size:14.5px;color:var(--soft);max-width:640px}
+
   /* FAQ */
   .faq{max-width:860px}
   details{border-top:1px solid rgba(107,122,82,.4)}
@@ -165,6 +175,16 @@
   @media (max-width:520px){
     .hero .btn{margin-bottom:14px}
     .mailcard{padding:20px}
+  }
+  @media (max-width:820px){
+    .cmp-row.cmp-head{display:none}
+    .cmp-row{display:block;border-top:1px solid rgba(185,122,43,.22);padding:6px 0}
+    .cmp-row:first-of-type{border-top:0}
+    .cmp-row > div{border-top:0;padding:10px 22px}
+    .cmp-row .cmp-label{font:500 24px var(--serif);color:var(--espresso);padding-top:18px}
+    .cmp-row > div[data-label]::before{content:attr(data-label);display:block;font:600 13px var(--sans);color:var(--amber);margin-bottom:2px}
+    .cmp-row .cmp-us{background:var(--moss);margin:4px 14px;border-radius:12px;padding:12px 16px}
+    .cmp-row .cmp-us::before{color:var(--amber-l)!important}
   }
 </style>
 
@@ -292,6 +312,60 @@
         <div class="step"><i>iii.</i><h3>Diligence</h3><p>We sign an NDA first, then I review the business with as little disruption to your team as possible.</p></div>
         <div class="step"><i>iv.</i><h3>Close and handoff</h3><p>I take over day to day as CEO and work with you through the agreed transition.</p></div>
       </div>
+    </div>
+  </section>
+
+  <!-- HOW I'M DIFFERENT -->
+  <section class="sec" id="different">
+    <div class="wrap">
+      <h2>How I'm different</h2>
+      <p class="intro">Owners often ask how selling to me compares to selling to other kinds of buyers. Here is the short version.</p>
+
+      <div class="cmp" role="table" aria-label="Comparison of buyer types">
+        <div class="cmp-row cmp-head" role="row">
+          <div role="columnheader"></div>
+          <div class="cmp-us" role="columnheader">Valley Rise (me)</div>
+          <div role="columnheader">A private equity firm</div>
+          <div role="columnheader">A corporate buyer</div>
+        </div>
+
+        <div class="cmp-row" role="row">
+          <div class="cmp-label" role="rowheader">Who leads day to day?</div>
+          <div class="cmp-us" role="cell" data-label="Valley Rise (me)">I personally become CEO, with a handoff we plan together.</div>
+          <div role="cell" data-label="A private equity firm">Varies by deal. Sometimes the existing team stays under the firm's oversight, sometimes a new CEO steps in.</div>
+          <div role="cell" data-label="A corporate buyer">Managers from the parent company, often with some roles combined or cut.</div>
+        </div>
+
+        <div class="cmp-row" role="row">
+          <div class="cmp-label" role="rowheader">What happens to your brand?</div>
+          <div class="cmp-us" role="cell" data-label="Valley Rise (me)">Your company name stays and we keep building onto the reputation you built.</div>
+          <div role="cell" data-label="A private equity firm">Can be kept, or merged into a larger platform.</div>
+          <div role="cell" data-label="A corporate buyer">Often folded into the parent's brand.</div>
+        </div>
+
+        <div class="cmp-row" role="row">
+          <div class="cmp-label" role="rowheader">Where does the buyer's focus go?</div>
+          <div class="cmp-us" role="cell" data-label="Valley Rise (me)">On your company, with decisions made with your team.</div>
+          <div role="cell" data-label="A private equity firm">Across several companies and a focus on growing the total portfolio. Decisions often made at the firm's office.</div>
+          <div role="cell" data-label="A corporate buyer">Often on fitting your business into the parent company, and finding other acquisitions. Decisions made at headquarters.</div>
+        </div>
+
+        <div class="cmp-row" role="row">
+          <div class="cmp-label" role="rowheader">How does growth happen?</div>
+          <div class="cmp-us" role="cell" data-label="Valley Rise (me)">By running this one company well, staying independent and nimble.</div>
+          <div role="cell" data-label="A private equity firm">Combining companies can unlock growth, at the cost of integrating into shared systems.</div>
+          <div role="cell" data-label="A corporate buyer">Often similar strategy of a private equity firm.</div>
+        </div>
+
+        <div class="cmp-row" role="row">
+          <div class="cmp-label" role="rowheader">What resources come with?</div>
+          <div class="cmp-us" role="cell" data-label="Valley Rise (me)">One operator focused on this company, supported by my investors and your team.</div>
+          <div role="cell" data-label="A private equity firm">Capital, a playbook, and experience from many other deals.</div>
+          <div role="cell" data-label="A corporate buyer">Scale, shared services, and existing customer and supplier relationships.</div>
+        </div>
+      </div>
+
+      <p class="cmp-fine">These are general patterns, and every buyer is different. I'm glad to talk through how any of this applies to your situation.</p>
     </div>
   </section>
 
